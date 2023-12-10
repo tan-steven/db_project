@@ -1,0 +1,61 @@
+RESULTS FROM RUNNING THE QUERIES
+
+$ sqlite3 hospital.db < ../src/queries.sql 
+PATRICIA JOHNSON
+WILLIAM BROWN
+4|Test4|1030|4|6|6/17/2010|Positive
+29|Test29|1008|3|0|11/17/1991|Negative
+48|Test48|1029|4|0|5/8/2007|Positive
+9|Instrument9|Stryker Corporation
+9|ELIZABETH BROWN|f|57|Pediatrics|31|617-314-8264|Lee Avenue|Woburn|31
+BETTY WHITE
+CAROL GARCIA|2
+JENNIFER DAVIS|3
+MARGARET MOORE|2
+MARIA MILLER|2
+MICHELLE CLARK|3
+SANDRA MARTIN|2
+SHARON ROBINSON|2
+SOLINDA WILLIAMS|3
+PATRICIA JOHNSON|5
+ELIZABETH BROWN|4
+WILLIAM BROWN|3
+ROBERT WILLIAMS|3
+MICHAEL JONES|3
+JOHN JOHNSON|3
+JAMES SMITH|3
+MARY SMITH|2
+LINDA WILLIAMS|2
+BARBARA JONES|2
+MARY SMITH
+
+The extra credit python program is stored in the src directory. The purpose is to
+use pandas dataframes to output the queries of the patients of a specific doctor.
+
+OUTPUT 
+
+Doctors:
+   D_ID            D_NAME D_GENDER  D_AGE                      D_SPECIALIZATION  D_YEARS_OF_EXPERIENCE     D_CONTACT          D_STREET      D_CITY
+0     0       JAMES SMITH        m     36                       General surgery                     10  781-370-0443    Sterling Place     Reading
+1     1      JOHN JOHNSON        m     39                             Pathology                     13  508-258-6524      Starr Street   Worcester
+2     2   ROBERT WILLIAMS        m     30                             Neurology                      4  617-936-0638     Dewitt Avenue      Boston
+3     3     MICHAEL JONES        m     41                      Nuclear medicine                     15  339-166-9590        Lawn Court  Burlington
+4     4     WILLIAM BROWN        m     44  Physical medicine and rehabilitation                     18  781-045-4121      Newel Street  Burlington
+5     5        MARY SMITH        f     36                     Internal medicine                     10  978-930-3316  Homecrest Avenue      Lowell
+6     6  PATRICIA JOHNSON        f     31            Obstetrics and gynaecology                      5  978-930-9517    Whitney Avenue      Lowell
+7     7    LINDA WILLIAMS        f     54         Cardiothoracic anesthesiology                     28  978-930-9485        Lee Avenue      Lowell
+8     8     BARBARA JONES        f     45                          Neurosurgery                     19  617-314-5667     Himrod Street      Woburn
+9     9   ELIZABETH BROWN        f     57                            Pediatrics                     31  617-314-8264        Lee Avenue      Woburn
+
+Patients of Doctor James Smith:
+                 P_NAME
+0          PAUL JACKSON
+1          KIMBERLY LEE
+2           SARAH LEWIS
+3      KENNETH THOMPSON
+4        DONNA THOMPSON
+5        BRIAN ROBINSON
+6         KAREN JACKSON
+7           BETTY WHITE
+8       LAURA RODRIGUEZ
+9  CHRISTOPHER ANDERSON
